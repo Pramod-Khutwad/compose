@@ -3,13 +3,6 @@ services:
   dev:
     image: 'tomcat:9'
     ports:
-    - "8081-8082:8080"
-    volumes:
-    - "/mnt/wars:/usr/local/tomcat/webapps"
-
-  qa:
-    image: 'tomcat:9'
-    ports:
-    - "8083-8084:8080"
+    - "8081:8080"
     volumes:
     - "/mnt/wars:/usr/local/tomcat/webapps"
